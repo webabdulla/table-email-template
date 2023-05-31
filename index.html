@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> table </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body { width: 100% !important; -webkit-text-size-adjust: 100% !important; -ms-text-size-adjust: 100%; margin: 0 !important; padding: 0 !important;font-family: Arial, Roboto, sans-serif; }
+      th, td, p, a{font-family: Arial, Roboto, sans-serif;}
+      /* table-section */
+      td.tbl-padding {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      th.bg-black {
+        color: #fff;
+        font-size: 13px;
+        height: 40px;
+        padding: 0 10px !important;
+        text-align: left;
+        width: 25%;
+        font-family: Arial, Roboto, sans-serif;
+
+      }
+
+      td.tbl-ro {
+         height: 50px;
+        padding: 0 10px !important;
+      }
+
+      .ul-style {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 600;
+        font-family: Arial, Roboto, sans-serif;
+      }
+
+      ul {
+        padding: 0 15px !important;
+        margin: 0;
+      }
+      td p{margin-bottom:0;}
+      td.tbl-ro {
+        text-align: left;
+        padding-bottom: 0px;
+        border-collapse: collapse;
+        font-size: 13px;
+        line-height: 22px;
+        font-family: Arial, Roboto, sans-serif;
+        -webkit-text-size-adjust: none;
+        mso-line-height-rule: exactly;
+        width: 25%;
+      }
+
+      /* about-section */
+      td.pra p {
+        font-size: 11px;
+        line-height: 17px;
+        font-family: Arial, Roboto, sans-serif;
+        margin: 0;
+        padding-bottom: 15px;
+      }
+
+      td.pra2 p {
+        font-size: 13px;
+        line-height: 20px;
+        font-family: Arial, Roboto, sans-serif;
+        margin: 0;
+        color: #1f1f1e;
+      }
+
+      td.pra2 i {
+        font-size: 11px;
+        line-height: 17px;
+        font-family: Arial, Roboto, sans-serif;
+        margin: 0;
+        color: #494949;
+      }
+
+      td.pra3 p {
+        font-size: 12px;
+        line-height: 18px;
+        font-family: Arial, Roboto, sans-serif;
+        margin: 0;
+        padding-bottom: 15px;
+      }
+
+      p.italic0 {
+        font-style: italic;
+        font-family: Arial, Roboto, sans-serif;
+      }
+
+      /* button section */
+      td.btn {
+        text-align: center;
+      }
+
+      td.btn a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 9px 11px;
+        font-size: 16px;
+        line-height: 22px;
+        background: #ccaa4f;
+        text-decoration: none;
+        color: #fff;
+       font-family: Arial, Roboto, sans-serif;
+      }
+
+      td.btn2 {
+        text-align: center;
+      }
+
+      td.btn2 a {
+        display: inline-block;
+        font-size: 10px;
+        line-height: 22px;
+        color: #5e5f60;
+        font-family: Arial, Roboto, sans-serif;
+      }
+
+      @media screen and (min-width: 651px) {
+        .container {
+          width: 650px !important;
+        }
+      }
+
+      @media screen and (max-width: 650px) {
+        .container {
+          width: 100% !important;
+        }
+
+        td.logo img {
+          width: 250px !important;
+        }
+     
+
+        td.header-text {
+          font-size: 25px !important;
+          line-height: 32px !important;
+        }
+
+        td.header-text {
+          padding-top: 20px !important;
+        }
+
+        td.logo {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+
+        td.header-text {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+
+        td.investing {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+
+        td.tbl-padding {
+          padding-left: 20px !important;
+          padding-right: 20px !important;;
+        }
+
+       th.bg-black {
+          padding: 0 7px !important;
+          text-align: left !important;
+        }
+        td.mbr_bar{padding-left: 20px !important; padding-right: 20px !important;}
+        ul {
+          padding: 0 15px !important;
+        }
+
+        td.table-p {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+
+        td.about-h2 {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+
+        td.pra {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+
+        td.pra2 {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+
+        td.pra3 {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+        td.respond, table.respond  {width:100% !important; }
+      }
+
+      @media screen and (max-width: 440px) {
+        td.respond, table.respond  {width:100% !important; }
+        th.bg-black {
+          font-size: 9px !important;
+        }
+
+        td.tbl-ro {
+          font-size: 9px !important;
+          line-height: 13px !important;
+          padding: 7px !important;
+        }
+      }
+    </style>
+  </head>
+  <body style="width: 100% !important; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;background:#F2F2F2;min-width:100%;">
+    <table cellpadding="0" cellspacing="0" style="margin-left:auto;margin-right:auto;table-layout:fixed;min-width:100%;background:#F2F2F2;">
+      <tr>
+        <td align="center" valign="top">
+          <table class="container" width="650" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:650px; background:#fff; ">
+            <tr>
+              <td align="center" valign="top">
+                <!-- logo & header -section-->
+                <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; margin-top:50px; padding-bottom:40px; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                  <tr>
+                    <td class="logo" align="center" valign="top" style="text-align: left; padding-left: 30px; padding-right: 30px;">
+                      <a href="https://imgbb.com/" target="_blank">
+                        <img src="https://i.ibb.co/4Pn23NM/Redbrick-tax-eblast-template-11-21.png" alt="Redbrick-tax-eblast-template-11-21" border="0" alt="logo image" style=" max-width:350px;height:auto;outline: none; -ms-interpolation-mode: bicubic;" border="0" width="350">
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="header-text" style="padding-top: 40px; padding-bottom:20px; padding-left:30px;padding-right:30px; font-weight: bold; color:#1f1f1e; border-collapse: collapse; font-size: 34px; font-family: Arial, Roboto, sans-serif; -webkit-text-size-adjust:none;mso-line-height-rule:exactly;line-height:42px;text-align: left;">
+                     Do you have a client <br> experiencing a liquidity event? 
+                   </td>
+                  </tr>
+               
+                   <!-- COLORED BAR STARTS HERE -->
+                  <tr>
+                    <td align="center" valign="top">
+                      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                        <tr>
+                          <td class="mbr_bar" align="center" valign="top" style="padding-left:30px; padding-right: 30px;">
+                           
+                            <!-- *** DO NOT USE CLASS RESPOND IF SMALL TABLE AND YOU DON'T WANT TO CHANGE THE WIDTH OF THE BAR -->
+                            <table class="respond" width="590" height="2" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:590px;height:2px;background:#ccaa4f">
+                              <tr>
+                                <td class="respond" bgcolor="#ccaa4f" width="590" align="center" valign="top" style="font-size:2px;mso-line-height-rule:exactly;line-height:2px;width:590px;background:#ccaa4f;">
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+
+
+
+                  <tr>
+                    <td align="center" valign="top">
+                      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                           <tr>
+                              <td class="investing" style="font-size:16px;line-height:22px;color:#353333;  font-family:  Arial, roboto, sans-serif; padding-left:30px;padding-right:30px;padding-top: 15px;">
+                                <p>
+                                Investing in Opportunity Zone funds provides tax advantages: </p>
+                              </td>
+                            </tr>
+                      </table>
+                    </td> 
+                  </tr>
+                 
+                  <tr>
+                    <td class="investing" style="padding-left:30px;padding-right:30px; padding-bottom:30px;padding-top: 15px;">
+                      <ul>
+                        <li class="ul-style"> The original gain is deferred and recognized on December 31, 2026</li>
+                        <li class="ul-style"> No federal tax due at exit if investment is held for more than 10 years</li>
+                        <li class="ul-style">No recapture of depreciation and refinance proceeds upon exit </li>
+                      </ul>
+                      <p class="pra5" style="font-size:16px;line-height:22px;color:#353333;  font-family:  Arial; margin-bottom:0;">A hypothetical scenario compares OZ & non-OZ investments to illustrate the tax implications which may lead to a tax advantage of ~400 bps.</p>
+                    </td>
+                  </tr>
+                </table>
+                <!-- table-section -->
+                <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                  <tr>
+                    <td class="tbl-padding">
+                      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; border-top:1px solid #a2a2a2;  border-left:1px solid #a2a2a2; border-right:1px solid #a2a2a2;border-bottom:1px solid #a2a2a2; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                        <tr>
+                          <td class="tbl-bg-th" bgcolor="#1f1f1e" style="background-color:#1f1f1e;">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                              <tr>
+                                <th class="bg-black">&nbsp;</th>
+                                <th class="bg-black">Outside OZ</th>
+                                <th class="bg-black">In an OZ</th>
+                                <th class="bg-black">Notes / Assumptions</th>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tbl-bg1" bgcolor="#e3e4e5" style="background:#e3e4e5">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                              <tr>
+                                <td class="tbl-ro">Capital Gain</td>
+                                <td class="tbl-ro">$1,000,000</td>
+                                <td class="tbl-ro">$1,000,000</td>
+                                <td class="tbl-ro">&nbsp;</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tbl-bg1">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                              <tr>
+                                <td class="tbl-ro">Initial Capital</td>
+                                <td class="tbl-ro"> ($300,000)</td>
+                                <td class="tbl-ro">NONE </td>
+                                <td class="tbl-ro"> 30% Federal and State taxes paid up front1</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tbl-bg1"v bgcolor="#e3e4e5" style="background:#e3e4e5">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                              <tr>
+                                <td class="tbl-ro">Initial Investment</td>
+                                <td class="tbl-ro">$700,000 </td>
+                                <td class="tbl-ro">$1,000,000 </td>
+                                <td class="tbl-ro">&nbsp;</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tbl-bg1">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                              <tr>
+                                <td class="tbl-ro">Investment Value after 10 years</td>
+                                <td class="tbl-ro">$1,815,620</td>
+                                <td class="tbl-ro">$2,362,274* </td>
+                                <td class="tbl-ro">10% pre-tax return over a 10-year hold</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tbl-bg1" bgcolor="#e3e4e5" style="background:#e3e4e5">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                              <tr>
+                                <td class="tbl-ro">Payment of Deferred Gains Tax</td>
+                                <td class="tbl-ro">&nbsp;</td>
+                                <td class="tbl-ro">($300,000) </td>
+                                <td class="tbl-ro">Federal and State taxes paid for tax year 2026</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tbl-bg1">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                              <tr>
+                                <td class="tbl-ro">Capital Gains Tax at Exit</td>
+                                <td class="tbl-ro">($334,686) </td>
+                                <td class="tbl-ro">NONE </td>
+                                <td class="tbl-ro">Federal and State taxes paid upon sale</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tbl-bg1" bgcolor="#f5eedc" style="background-color:#f5eedc;">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                              <tr>
+                                <td class="tbl-ro">Net Dollars After Tax</td>
+                                <td class="tbl-ro">$1,480,934</td>
+                                <td class="tbl-ro">$2,062,274 </td>
+                                <td class="tbl-ro">Sum of Gross Proceeds less taxes paid</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="tbl-bg1" bgcolor="#f5eedc" style="background-color:#f5eedc; border-top:1px solid #aaa491">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                              <tr>
+                                <td class="tbl-ro">After-Tax Net IRR</td>
+                                <td class="tbl-ro">7.8%</td>
+                                <td class="tbl-ro">11.4% </td>
+                                <td class="tbl-ro">Pre-tax IRR of 10% in an OZ can generate a 11.4% after-tax IRR</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- border-bottom & About-section -->
+                <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%;">
+                        <tr>
+                          <td class="table-p" style="padding-left:30px;padding-right:30px; font-size: 11px;line-height: 17px;color: #353333; text-align: left; font-family: Arial, Roboto, sans-serif; margin: 0;padding-top: 10px;"> *Footnote 1: table footnote text to come... <br> *Footnote 2: table footnote text to come... </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="about-h2" style="padding-left:30px;padding-right:30px; font-size: 16.33px;line-height: 22px;font-weight: bold;padding-top:30px; border-collapse: collapse; font-family: Arial, Roboto, sans-serif; -webkit-text-size-adjust:none;mso-line-height-rule:exactly; text-align: center;"> To learn more about Opportunity Zone investing, <br> please visit our website: </td>
+                  </tr>
+                  <tr>
+                    <td class="btn">
+                      <a href="#" target="_blank">OZ RESOURCES</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pra" style="padding-left:30px;padding-right:30px; padding-top:25px;">
+                      <p>This email has been provided to you by Redbrick LMD, LLC (“Redbrick”) for informational purposes and may not be relied upon for any other purpose. The information contained herein is preliminary and subject to change and is not an offer to buy or sell or a solicitation of an offer to buy or sell an interest in the Fund or any other investment fund or partnership (together, with the Fund, each, a “Managed Fund”) sponsored by Redbrick. </p>
+                      <p>None of Redbrick or any of its affiliates make any representation or warranty, express or implied, as to the accuracy, completeness or reliability of the information contained herein, and nothing contained herein shall be relied upon as a promise or representation as to past or future performance. All information set forth herein has been prepared from information furnished by Redbrick and from publicly available sources. The information contained herein (including industry data) may be based, in part, on information obtained from third parties believed to be reliable and/or assumptions that later prove to be invalid or incorrect. While such sources are believed to be reliable, none of Redbrick or its affiliates assumes any responsibility for such information. The data and charts presented in this presentation are intended to be hypothetical illustrations of mathematical principles.</p>
+                      <p>The information contained herein is privileged and confidential information and is intended for use by the intended recipient only. This presentation includes confidential, proprietary, trade secret and other commercially sensitive information and must be kept strictly confidential and may not be photocopied, reproduced or distributed (in each case, in whole or in part) to others at any time without the prior written consent of Redbrick. </p>
+                      <p>Redbrick does not provide any tax advice. Any tax statement herein regarding any U.S. federal tax is not intended or written to be used, and cannot be used, by any taxpayer for the purpose of avoiding any penalties. Any such statement herein was written to support the marketing or promotion of the transactions or matters to which the statement relates. Each taxpayer should seek advice based on the taxpayer’s particular circumstances from an independent tax advisor.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pra2" style="padding-left:30px;padding-right:30px; padding-top:5px;">
+                      <p class="bold" style="font-weight:bold;">Ray DeSantis</p>
+                      <p>Managing Director, Capital Markets</p>
+                      <p class="color" style="color:#9a2525;font-weight:bold;">REDBRICK LMD, LLC</p>
+                      <p>1627 I Street N.W. Ste 920 | Washington, DC 20006</p>
+                      <p>C: 401-829-2782</p>
+                      <p class="italic0">Registered Representative of Foreside Fund Services, which is not affiliated with Redbrick LMD or its affiliates.</p>
+                    </td>
+                  </tr>
+                </table>
+                <!-- DISCLOSURE -->
+                <table width="100%" bgcolor="#ededed" align="center" cellpadding="0" cellspacing="0" border="0" style="mso-table-rspace: 0pt; mso-table-lspace: 0pt; border-collapse: collapse;width:100%; background-color:#ededed; margin-top:20px;">
+                  <tr>
+                    <td class="pra3" style="padding-left:30px;padding-right:30px; padding-top:20px;font-family: Arial, Roboto, sans-serif;">
+                      <p class="upper" style="text-transform:uppercase;">Disclosure</p>
+                      <p>This email has been provided to you by Redbrick LMD, LLC (“Redbrick”) for informational purposes and may not be relied upon for any other purpose. The information contained herein is preliminary and subject to change and is not an offer to buy or sell or a solicitation of an offer to buy or sell an interest in the Fund or any other investment fund or partnership (together, with the Fund, each, a “Managed Fund”) sponsored by Redbrick.</p>
+                      <p>None of Redbrick or any of its affiliates make any representation or warranty, express or implied, as to the accuracy, completeness or reliability of the information contained herein, and nothing contained herein shall be relied upon as a promise or representation as to past or future performance. All information set forth herein has been prepared from information furnished by Redbrick and from publicly available sources. The information contained herein (including industry data) may be based, in part, on information obtained from third parties believed to be reliable and/or assumptions that later prove to be invalid or incorrect. While such sources are believed to be reliable, none of Redbrick or its affiliates assumes any responsibility for such information. The data and charts presented in this presentation are intended to be hypothetical illustrations of mathematical principles. </p>
+                      <p>The information contained herein is privileged and confidential information and is intended for use by the intended recipient only. This presentation includes confidential, proprietary, trade secret and other commercially sensitive information and must be kept strictly confidential and may not be photocopied, reproduced or distributed (in each case, in whole or in part) to others at any time without the prior written consent of Redbrick.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="btn2" style="padding-left:30px;padding-right:30px; padding-bottom:30px; text-align: center;font-family: Arial, Roboto, sans-serif;">
+                      <a href="#" target="_blank">UNSUBSCRIBE</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
